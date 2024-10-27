@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Etiquetas de control de caché -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOBE - LODO CLANDESTINO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/playPauseButton.css">
+</head>
+
+<body>
+    <div class="reproductor-card">
+        <!-- Cancion portada y titulo -->
+        <div class="portada">
+            <img src="assets/images/portadas/portadaLodoClandestino.png" alt="Portada">
+        </div>
+        <div class="titulo">
+            <p>ADOBE - LODO CLANDESTINO</p>
+        </div>
+        <audio id="audio">
+            <source src="assets/mp3/ADOBE - LODO CLANDESTINO.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Barra de progreso cancion -->
+        <div class="progress-container" onclick="setAudioProgress(event)">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-thumb" id="progress-thumb"></div>
+            </div>
+        </div>
+
+        <!-- Tiempo transcurrido y duración -->
+        <div class="time-display">
+            <span id="current-time">00:00</span><span>03:47</span>
+        </div>
+
+        <!-- Play y pausa -->
+        <div class="play-pausa-container" id="custom-play">
+            <div class="fondo-play-pausa-button"></div>
+            <div class="icono-play-pause">
+                <div class="parte izquierda"></div>
+                <div class="parte derecha"></div>
+            </div>
+        </div>
+
+        <!-- Boton descargar -->
+        <a href="assets/mp3/ADOBE - LODO CLANDESTINO.mp3" download>
+            <div class="btnDescarga">DESCARGAR .mp3</div>
+        </a>
+
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
