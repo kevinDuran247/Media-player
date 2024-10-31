@@ -2,24 +2,43 @@
 <html lang="es">
 
 <head>
-    <!-- Etiquetas de control de caché -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="assets/images/icon.svg" type="image/svg+xml">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADOBE - LODO CLANDESTINO</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/playPauseButton.css">
+	<!-- Etiquetas de control de caché -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-31P57TZPXR">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-31P57TZPXR');
+
+      // Habilitar el modo de depuración
+    gtag('config', 'G-31P57TZPXR', { 'debug_mode': true });
+
+
+  });
+	</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ADOBE - LODO CLANDESTINO</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/playPauseButton.css">
 </head>
 
 <body>
-    <div class="reproductor-card">
-        <!-- Cancion portada y titulo -->
-        <div class="portada">
-            <img src="assets/images/portadas/portadaLodoClandestino.png" alt="Portada">
+	<div class="reproductor-card">
+		<!-- Cancion portada y titulo -->
+		<div class="portada">
+			<img src="assets/images/portadas/portadaLodoClandestino.png" alt="Portada">
         </div>
         <div class="titulo">
             <p>ADOBE - LODO CLANDESTINO</p>
@@ -50,9 +69,10 @@
         </div>
 
         <!-- Boton descargar -->
-        <a href="assets/mp3/ADOBE - LODO CLANDESTINO.mp3" download>
+        <a href="download.php" download>
             <div class="btnDescarga">DESCARGAR .mp3</div>
         </a>
+
 
     </div>
     <script src="js/funciones.js"></script>
