@@ -33,7 +33,7 @@
 </head>
 
 <body>
-	<div class="reproductor-card">
+	<div class="reproductor-card" style="box-shadow: 10px 2px 90px -11px rgb(0, 0, 0);">
 		<!-- Cancion portada y titulo -->
 		<div class="portada">
 			<img src="assets/images/portadas/portadaEstareCerca.jpg" alt="Portada">
@@ -47,8 +47,8 @@
 
         <!-- Barra de progreso cancion -->
         <div class="progress-container" onclick="setAudioProgress(event)">
-            <div class="progress-bar" id="progress-bar">
-                <div class="progress-thumb" id="progress-thumb"></div>
+            <div class="progress-bar" id="progress-bar" style="background-color: black ;">
+                <div class="progress-thumb" id="progress-thumb" style="background-color: black ;"></div>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
 
         <!-- Play y pausa -->
         <div class="play-pausa-container" id="custom-play">
-            <div class="fondo-play-pausa-button"></div>
+            <div class="fondo-play-pausa-button" style="background-color: black ;"></div>
             <div class="icono-play-pause">
                 <div class="parte izquierda"></div>
                 <div class="parte derecha"></div>
@@ -68,7 +68,7 @@
 
         <!-- Boton descargar -->
         <a href="download.php?song=ESTARE CERCA">
-            <div class="btnDescarga">DESCARGAR .mp3</div>
+            <div class="btnDescarga" style="background-color: black ;">DESCARGAR .mp3</div>
         </a>
         
 
